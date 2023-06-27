@@ -1,0 +1,49 @@
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+
+  color: black;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* height: 100%; */
+  gap: 30px;
+}
+nav {
+  display: flex;
+  background-color: lightgray;
+  height: 75px;
+}
+nav ul img {
+  width: 50px;
+  margin-top: 7px;
+  object-fit: contain;
+}
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-right: 100px;
+}
+.nav-right a {
+  background-color: orangered;
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 5px;
+}
+nav ul li a:hover {
+  font-weight: bold;
+  color: orangered;
+}
+.nav-right a:hover {
+  background-color: lightgrey;
+  color: orangered;
+  padding: 6px;
+  border-radius: 5px;
+}
