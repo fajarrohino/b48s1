@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <title>Contact</title>
+    <title>Contact day3</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -24,28 +24,29 @@
     <div class="contact-container">
       <form class="form-container">
         <div>
-          <label id="input-name">Name</label>
-          <input />
+          <label>Name</label>
+          <input id="input-name" />
         </div>
         <div>
-          <label id="input-email">Email</label>
-          <input />
+          <label>Email</label>
+          <input id="input-email" />
         </div>
         <div>
-          <label id="input-phone">Phone Namber</label>
-          <input />
+          <label>Phone Namber</label>
+          <input id="input-phone" />
         </div>
         <div>
-          <label id="input-subject">Subject</label>
-          <select>
-            <option>Frontend Developer</option>
-            <option>Backend Developer</option>
-            <option>Fullstack Developer</option>
+          <label>Subject</label>
+          <select id="input-subject">
+            <option value="">Pilih Subject..</option>
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer">Backend Developer</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
           </select>
         </div>
         <div>
-          <label id="input-message">Your Message</label>
-          <textarea></textarea>
+          <label>Your Message</label>
+          <textarea id="input-message"></textarea>
         </div>
         <button type="submit" onclick="submitData(event)">Submit</button>
       </form>
