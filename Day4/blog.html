@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="icon" href="images/logo-dw.png" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <ul>
+        <li><img src="images/logo-dw.png" alt="" /></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </nav>
+    <!-- /nav -->
+
+    <!-- form create blog -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input id="input-blog-title" />
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                  <img src="images/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- list blog -->
+      <hr class="line" />
+      <div id="contents" class="blog-list">
+        <!-- dynamic content would be here -->
+      </div>
+      <!-- /list blog -->
+    </div>
+    <!-- /form create blog -->
+    <script src="js/blog.js"></script>
+  </body>
+</html>
